@@ -1,5 +1,6 @@
 // frontend/script.js
-const API_URL = 'http://localhost:3001';
+// Use Vite env variable for API URL, fallback to localhost if not set
+const API_URL = import.meta && import.meta.env && import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : 'http://localhost:3001';
 
 document.getElementById('uploadForm').addEventListener('submit', async (e) => {
     e.preventDefault();
