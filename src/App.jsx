@@ -196,7 +196,7 @@ function App() {
                 </div>
                 <div className="data-section">
                   <h4>Contact Information</h4>
-                  <p><strong>Phone:</strong> {result.phone}</p>
+                  {/* <p><strong>Phone:</strong> {result.phone}</p> */}
                   <p><strong>Email:</strong> {result.email === '' ? 'N/A' : result.email}</p>
                 </div>
                 <div className="data-section">
